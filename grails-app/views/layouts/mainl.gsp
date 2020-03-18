@@ -43,7 +43,7 @@
                         <a class="dropdown-item" href="#" id="logout-btn">Logout</a>
                     </g:if>
                     <g:else>
-                        <a class="dropdown-item" href="#" id="logout-btn">Login</a>
+                        <a class="dropdown-item" href="${createLink(controller: 'login', action: 'auth')}">Login</a>
                     </g:else>
                 </div>
             </li>
