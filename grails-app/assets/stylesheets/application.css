@@ -1,0 +1,47 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require bootstrap
+*= require grails
+*= require main
+*= require mobile
+*= require_self
+*/
+
+#logo {
+    animation: wabble 0.9s infinite;
+}
+
+@keyframes wabble {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    40% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.bg-light {
+    background-color: #bae4f5 !important;
+    font-family: pricedown, sans-serif !important;
+    font-size: 1.8rem;
+}
+
+.nav-item .active{
+    color: #fff;
+}
